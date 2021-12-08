@@ -24,8 +24,8 @@ nav {
     z-index: 10;
 }
 main {
-    width: 100vw;
-    height: 100vh; 
+    width: auto;
+    height: auto; 
     background: var(--dessert-sand);
 }
 a {
@@ -44,7 +44,7 @@ a {
     display: flex;
     align-items: center;
     margin-left: 3%;
-    color: #fff;
+    color: var(--mystic);
 }
 #nav-container {
     height: 5%;
@@ -95,6 +95,7 @@ a {
 }
 #about-me-text p {
     padding: 20% 5% 20% 5%;
+    min-width: 320px;
 }
 
 #projects-container {
@@ -106,6 +107,7 @@ a {
     width: 25%;
     height: 100%;
     margin-top: 5%;
+    min-width: 205px;
 }
 .project-image {
     width: 100%;
@@ -154,6 +156,8 @@ a {
     background: var(--old-burgandy);
     width: 100%;
     height: 5%;
+    position: relative;
+    bottom: 0;
 }
 #contact-info-container {
     height: 100%;
@@ -167,4 +171,24 @@ a {
 .contact a {
     color: var(--mystic);
     height: 100%;
+}
+
+@media screen and (max-width:776px) {
+    #projects-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:500px) {
+    #about-me {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #image-container {
+        width: 100%;
+        height: auto;
+    }
 }
