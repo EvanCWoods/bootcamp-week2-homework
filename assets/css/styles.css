@@ -75,7 +75,7 @@ a {
 }
 
 .about-me-content {
-    width: 50%;
+    width: 45%;
     height: 100%;
 }
 #image-container {
@@ -95,7 +95,7 @@ a {
 }
 #about-me-text p {
     padding: 20% 5% 20% 5%;
-    min-width: 320px;
+    min-width: 250px;
 }
 
 #projects-container {
@@ -190,5 +190,8 @@ a {
     #image-container {
         width: 100%;
         height: auto;
+    }
+    #about-me-text {
+        align-items: center;
     }
 }
