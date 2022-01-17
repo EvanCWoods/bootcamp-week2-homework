@@ -4,89 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <title>Evan Woods - Full Stack Portfolio</title>
+    <link rel="stylesheet" href="./Develop/css/styles.css">
+    <title>Evan Woods Portfolio</title>
 </head>
 <body>
-    <header id="header-container">
-        <nav>
-            <h1 id="page-title">Evan Woods</h1>
-            <ul id="nav-container">
-                <li class="nav-item">
-                    <a href="#projects-container">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about-me">About Me</a>
-                </li>
-            </ul>
-        </nav>
+    <header>
+        <div id="header-title-container">
+            <h1 id="header-title">Evan Woods</h1>
+        </div>
+        <button id="menu-button">Menu</button>
+        <ul id="header-menu-container" dir="rtl" style="display: none;">
+            <li class="menu-option-container"><a class="menu-option" href="">Projects</a></li>
+            <li class="menu-option-container"><a class="menu-option" href="">About Me</a></li>
+            <li class="menu-option-container"><a class="menu-option" href="">Contact Me</a></li>
+        </ul>
     </header>
 
-    <main id="content-container">
-        <section id="about-me">
-            <div id='image-container' class="about-me-content">
-                <img src="./assets/images/profile.jpg" alt="Self Portrait">
-            </div>
-            <div id="about-me-text" class="about-me-content">
-                <p>My name is Evan Woods and I am currently completing the "Full Stack Flex Coding Bootcamp" 
-                from The University of Sydney. I am 21 Years old and have experience in multiple languages including: 
-                JavaScript, Python and C++, with multiple frameworks for each (eg. React, Tkinter),
-                along with a deep level understanding of machine learning after spending 3 months learning the TensorFlow library.</p>
-            </div>
-        </section>
-        <section id="projects-container">
-            <div class='project-content-container'>
-                <div class='project-image'>
-                    <img src="./assets/images/python.png" alt="Python Programming Language">
-                </div>
-                <div class='project-description'>
-                    <p>This project uses pythons Turtle library as a canvas for drawing images to the screen.
-                        In this case, the project is set up to randomly select a new point for the turtle object and draw a star in that space,
-                        before moving to find another enpty space and avoid overlap.
-                    </p>
-                    <a href="https://github.com/EvanCWoods/Turtle-Visuals">View Code.</a>
-            </div>
-            </div>
-            <div class='project-content-container'>
-                <div class='project-image'><img src="./assets/images/tensorflow.png" alt="Tensorflow Framework"></div>
-                <div class='project-description'><p>This project demonstrates one of the most innovative and exciting technologies to come out of the machine learning revolution: autoencoders.
-                    The project is designed to create a tensorflow model that learns by competing against itself in order to get better at generating images that are indestinguishable from originals.
-                </p>
-                <a href="https://github.com/EvanCWoods/basic-autoencoder">View Code.</a>
-            </div>
-            </div>
-            <div class='project-content-container'>
-                <div class='project-image'><img src="./assets/images/python.png" alt="Web Scraping"></div>
-                <div class='project-description'><p>
-                    This project uses the Beautiful Soup web scraping framework in python in order to access a web url, take a give nset of information and store it for use.
-                    It will be upgraded to use SQLITE as a built in database while it is currently writing data to a CSV file for demonstration purposes.
-                </p>
-            <a href="https://github.com/EvanCWoods/web-scraping">View Code.</a>
-        </div>
-            </div>
-            <div class='project-content-container'>
-                <div class='project-image'><img src="./assets/images/tensorflow.png" alt="Tensorflow Framework"></div>
-                <div class='project-description'>
-                    <p>This project uses Tensorflow in order to understand and classify text. 
-                        The dataset is a collection of tweets, all with different labels based on the emotion within them. 
-                        The model is able to learn and understand the contents of these tweets very fast and demosntrates the exciting possibility of natural language processing in the future.</p>
-                        <a href="https://github.com/EvanCWoods/Twitter-Sentiment">View Code.</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer id='footer-container'>
-        <div id="contact-info-container">
-            <ul id='contact-list'>
-                <li class='contact'><a href="#">github</a></li>
-                <li class='contact'><a href="#">Email</a></li>
-                <li class='contact'><a href="#">LinkedIn</a></li>
-            </ul>
-        </div>
-    </footer>
 </body>
+<script src="./Develop/js/script.js"></script>
 </html>
